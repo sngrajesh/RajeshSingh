@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./src/images/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./src/styles/style.css" />
+    <title>Rajesh Singh</title>
+  </head>
+  <body class="lightMode" id="body">
+    <div class="imagePreview" id="imagePreview">
+      <div id="closePreview">Close</div>
+      <img src="" alt="Preview" id="mainPreviewImage" />
+    </div>
+
+    <header class="mainheader">
+      <div class="logo">
+        <img src="./src/images/logo.png" alt="Logo" id="logo" />
+      </div>
+      <nav class="navTop">
+        <div class="list" id="about2">
+          <a href="#about">About</a>
+        </div>
+        <div class="list" id="works2">
+          <a href="#works">Works</a>
+        </div>
+        <div class="list" id="skills2">
+          <a href="#skills">Skills</a>
+        </div>
+        <div class="list" id="contact2">
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+      <div class="headerButton">
+        <div class="modeButton" id="fc">FS</div>
+        <div class="modeButton" id="mode">Dark</div>
+      </div>
+    </header>
+
+    <div class="mainContainer">
+      <div class="spacer" id="about"></div>
+      <div class="container about">
+        <h1 class="containerHeading">About</h1>
+
+        <div class="innerAbout">
+          <div class="imageAbout">
+            <img src="./src/images/rajesh.png" alt="rajesh" id="rajesh" />
+          </div>
+          <div class="content">
+            <h1 class="mainHeading">Hello there, I'm Rajesh</h1>
+            <h3 class="subHeading">Front-end Designer And Developer</h3>
+            <div class="paragraph">
+              A Developer who will help you in your project in the most
+              efficient and fast way possible, turning your idea into reality.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="spacer" id="works"></div>
+      <div class="container works">
+        <h1 class="containerHeading">My Works</h1>
+        <div class="workContainer">
+          <div class="card-carousel">
+            <div class="card" id="1">
+              <img
+                src="./src/images/Projects/pic1.jpg"
+                alt=""
+                class="image-container"
+                onclick="imageInspector(this)"
+              />
+              <p>
+                <strong>Lightning QR</strong>
+                is a free and fast QR code generator and reader where you can
+                create your own QR in just seconds.
+
+                <br />
+                <button>
+                  <a
+                    href="https://gitrajeshsingh.github.io/LightningQR/"
+                    target="blank"
+                    >VIEW</a
+                  >
+                </button>
+              </p>
+            </div>
+            <div class="card" id="2">
+              <img
+                src="./src/images/Projects/pic2.JPG"
+                alt=""
+                class="image-container"
+                onclick="imageInspector(this)"
+              />
+              <p>
+                <strong>TODO Extension</strong>
+                is a simple todo extension for your Browser where you can list
+                out your TODO's.
+                <br />
+                <button>
+                  <a
+                    href="https://gitrajeshsingh.github.io/ToDoExtension/"
+                    target="blank"
+                    >VIEW</a
+                  >
+                </button>
+              </p>
+            </div>
+            <div class="card" id="3">
+              <img
+                src="./src/images/Projects/pic4.png"
+                alt=""
+                class="image-container"
+                onclick="imageInspector(this)"
+              />
+
+              <p>
+                <strong>Lightning Filter</strong>
+                is a free online photo editor Application
+                <br />
+                <button>
+                  <a
+                    href="https://gitrajeshsingh.github.io/LightningFilter/"
+                    target="blank"
+                    >VIEW</a
+                  >
+                </button>
+              </p>
+            </div>
+            <div class="card" id="4">
+              <img
+                src="./src/images/Projects/pic3.png"
+                alt=""
+                class="image-container"
+                onclick="imageInspector(this)"
+              />
+
+              <p>
+                <strong>Vocal</strong>
+                is online text to speech converter.
+                <br />
+                <button>
+                  <a
+                    href="https://gitrajeshsingh.github.io/Vocal/"
+                    target="blank"
+                    >VIEW</a
+                  >
+                </button>
+              </p>
+            </div>
+            <div class="card" id="5">
+              <img
+                src=""
+                alt=""
+                class="image-container"
+                onclick="imageInspector(this)"
+              />
+
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Sapiente, explicabo!
+                <br />
+                <button><a href="" target="blank">VIEW</a></button>
+              </p>
+            </div>
+          </div>
+          <a href="#" class="visuallyhidden card-controller"
+            >Carousel controller</a
+          >
+        </div>
+      </div>
+
+      <div class="spacer" id="skills"></div>
+      <div class="container skills">
+        <h1 class="containerHeading">My Skills</h1>
+        <div class="skillsBar">
+          <div class="bar">
+            <div class="info">
+              <span>HTML</span>
+            </div>
+            <div class="progress-line html">
+              <span></span>
+            </div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <span>CSS</span>
+            </div>
+            <div class="progress-line css">
+              <span></span>
+            </div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <span>JavaScript</span>
+            </div>
+            <div class="progress-line javascript">
+              <span></span>
+            </div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <span>MySQL</span>
+            </div>
+            <div class="progress-line mysql">
+              <span></span>
+            </div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <span>Node JS</span>
+            </div>
+            <div class="progress-line node">
+              <span></span>
+            </div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <span>Angular</span>
+            </div>
+            <div class="progress-line angular">
+              <span></span>
+            </div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <span>Figma</span>
+            </div>
+            <div class="progress-line figma">
+              <span></span>
+            </div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <span>MySQL</span>
+            </div>
+            <div class="progress-line mysql">
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="spacer" id="contact"></div>
+
+      <div class="container contact">
+        <h1 class="containerHeading">Contact</h1>
+        <div class="innerContact">
+          <div class="leftContact">
+            <strong>
+              For any enquiries, or just to say hello, get in touch and contact
+              us.
+            </strong>
+          </div>
+          <div class="rightContact">
+            <div class="rightContact1">
+              <div class="rightContact11">
+                <strong>Phone : </strong>
+                <br />
+                <a href="tel:+91-9326455225">9326455225</a>
+              </div>
+              <div class="rightContact12">
+                <strong>Mail @ : </strong>
+                <br />
+                <a href="mailto:rajeshnksingh@gmail.com">rajeshnksingh</a>
+              </div>
+            </div>
+
+            <div class="rightContact2">
+              <div class="rightContact21">
+                <strong>Connect : </strong>
+                <br />
+                <div class="rightContact211">
+                  <a
+                    href="https://www.linkedin.com/in/rajeshnksingh"
+                    target="blank"
+                    >Linked In</a
+                  >
+                  <a href="https://github.com/GitRajeshSingh" target="blank"
+                    >Github</a
+                  >
+                  <a
+                    href="https://mobile.twitter.com/RajeshS49755753"
+                    target="blank"
+                    >Twitter</a
+                  >
+                </div>
+              </div>
+              <div class="rightContact22">
+                <strong>Address : </strong>
+                <br />
+                <span
+                  >25 Shubhash terraces, Katraj, Pune, Maharashtra -
+                  411046</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <h5>
+          <svg
+            aria-hidden="true"
+            role="img"
+            width="1em"
+            height="1em"
+            preserveAspectRatio="xMidYMid meet"
+            viewBox="0 0 20 20"
+          >
+            <path
+              fill="currentColor"
+              d="M10 0c5.523 0 10 4.477 10 10s-4.477 10-10 10S0 15.523 0 10S4.477 0 10 0zm0 1.395a8.605 8.605 0 1 0 0 17.21a8.605 8.605 0 0 0 0-17.21zm.16 3.256c1.08 0 2.117.303 3.003.864a.698.698 0 0 1-.745 1.179a4.211 4.211 0 0 0-2.257-.647c-2.278 0-4.114 1.775-4.114 3.953s1.836 3.953 4.114 3.953c.801 0 1.567-.22 2.224-.627a.698.698 0 0 1 .735 1.187a5.608 5.608 0 0 1-2.96.836c-3.037 0-5.509-2.39-5.509-5.349c0-2.96 2.472-5.349 5.51-5.349z"
+            />
+          </svg>
+          All Rights Reserved | Rajesh Singh
+        </h5>
+      </div>
+    </div>
+
+    <div class="bottomNav">
+      <nav class="navBottomInner">
+        <div class="list" id="about3">
+          <a href="#about">
+            <svg
+              aria-hidden="true"
+              role="img"
+              width="0.8em"
+              height="0.8em"
+              preserveAspectRatio="xMidYMid meet"
+              viewBox="0 0 448 512"
+            >
+              <defs>
+                <linearGradient id="header-shape-gradient" x2="0.35" y2="1">
+                  <stop offset="0%" stop-color="var(--color-stop)" />
+                  <stop offset="30%" stop-color="var(--color-stop)" />
+                  <stop offset="100%" stop-color="var(--color-bot)" />
+                </linearGradient>
+              </defs>
+              <path
+                d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0S96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"
+              />
+            </svg>
+          </a>
+        </div>
+        <div class="list" id="works3">
+          <a href="#works">
+            <svg
+              aria-hidden="true"
+              role="img"
+              width="0.9em"
+              height="0.9em"
+              preserveAspectRatio="xMidYMid meet"
+              viewBox="0 0 640 512"
+            >
+              <path
+                d="M640 264v-16c0-8.84-7.16-16-16-16H344v-40h72c17.67 0 32-14.33 32-32V32c0-17.67-14.33-32-32-32H224c-17.67 0-32 14.33-32 32v128c0 17.67 14.33 32 32 32h72v40H16c-8.84 0-16 7.16-16 16v16c0 8.84 7.16 16 16 16h104v40H64c-17.67 0-32 14.33-32 32v128c0 17.67 14.33 32 32 32h160c17.67 0 32-14.33 32-32V352c0-17.67-14.33-32-32-32h-56v-40h304v40h-56c-17.67 0-32 14.33-32 32v128c0 17.67 14.33 32 32 32h160c17.67 0 32-14.33 32-32V352c0-17.67-14.33-32-32-32h-56v-40h104c8.84 0 16-7.16 16-16zM256 128V64h128v64H256zm-64 320H96v-64h96v64zm352 0h-96v-64h96v64z"
+              />
+            </svg>
+          </a>
+        </div>
+        <div class="list" id="skills3">
+          <a href="#skills">
+            <svg
+              aria-hidden="true"
+              role="img"
+              width="1em"
+              height="1em"
+              preserveAspectRatio="xMidYMid meet"
+              viewBox="0 0 1024 1024"
+            >
+              <path
+                d="M416 896V128h192v768H416zm-288 0V448h192v448H128zm576 0V320h192v576H704z"
+              />
+            </svg>
+          </a>
+        </div>
+        <div class="list" id="contact3">
+          <a href="#contact">
+            <svg
+              aria-hidden="true"
+              role="img"
+              width="0.8em"
+              height="0.8em"
+              preserveAspectRatio="xMidYMid meet"
+              viewBox="0 0 16 16"
+            >
+              <g>
+                <path
+                  fill-rule="evenodd"
+                  d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42a18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
+                />
+              </g>
+            </svg>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </body>
+  <script src="./src/script/script.js"></script>
+  <script src="./src/script/card.js"></script>
+</html>
