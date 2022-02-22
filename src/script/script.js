@@ -78,9 +78,7 @@ document.addEventListener("scroll", () => {
   if (window.innerWidth > 599) {
     rajesh.style.top = -1 * st * 0.09 + "px";
   }
-  for (let i = 0; i < card.length; i++) {
-    card[i].style.top = -1 * st * 0.09 + 50 + "px";
-  }
+  
 });
 
 fc.addEventListener("click", () => {
