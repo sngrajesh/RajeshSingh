@@ -1,6 +1,6 @@
 # RajeshSingh
 Portfolio
-To view a live example, **[click here](https://gitrajeshsingh.github.io/rajeshsingh)**
+To view a live example, **[click here](https://gitrajeshsingh.github.io/RajeshSingh/)**
 
 # Clone And Use 📋
 
