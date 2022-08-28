@@ -15,7 +15,6 @@ let contact2 = document.getElementById("contact2");
 let spacer = document.getElementById("spacer");
 let card = document.getElementsByClassName("card");
 let logo = document.getElementById("logo");
-var fc = document.getElementById("fc");
 var elem = document.documentElement;
 
 
@@ -81,39 +80,6 @@ document.addEventListener("scroll", () => {
   
 });
 
-fc.addEventListener("click", () => {
-  if (fc.innerHTML == "FS") {
-    openFullscreen();
-    fc.innerHTML = "CS";
-  } else {
-    closeFullscreen();
-    fc.innerHTML = "FS";
-  }
-});
-
-function openFullscreen() {
-  if (elem.requestFullscreen) {
-    elem.requestFullscreen();
-  } else if (elem.webkitRequestFullscreen) {
-    /* Safari */
-    elem.webkitRequestFullscreen();
-  } else if (elem.msRequestFullscreen) {
-    /* IE11 */
-    elem.msRequestFullscreen();
-  }
-}
-
-function closeFullscreen() {
-  if (document.exitFullscreen) {
-    document.exitFullscreen();
-  } else if (document.webkitExitFullscreen) {
-    /* Safari */
-    document.webkitExitFullscreen();
-  } else if (document.msExitFullscreen) {
-    /* IE11 */
-    document.msExitFullscreen();
-  }
-}
 
 
 cp.addEventListener("click",()=>{
